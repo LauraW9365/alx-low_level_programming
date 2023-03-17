@@ -5,7 +5,7 @@
 /**
  *main - Determines if a number is positive, negative or zero
  *description - creates a random number and prints a result
- *Return: Always 0
+ *Return: 0 means success
 */
 int main(void)
 {
