@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * rev_string - reverse a string
- * @s - characater
+ * rev_string - reverses a string
+ * @s: characater s
+ *
  * Description: This will reverse a string
  * Return: 0
  */
 
 void rev_string(char *s)
-
 {
-int a = 0, b, c;
+	int a = 0, b, c;
 	char d;
 
 	while (s[a] != '\0')
@@ -25,3 +25,4 @@ int a = 0, b, c;
 		s[c] = d;
 	}
 }
+
