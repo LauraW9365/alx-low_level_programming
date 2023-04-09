@@ -6,7 +6,7 @@
  * @argc: count of command line arguments
  * @argv: array of arguments
  *
- * Return: 1 if error or 0
+ * Return: 1 if Error or 0
 */
 
 int main(int argc, char *argv[])
@@ -16,7 +16,6 @@ int main(int argc, char *argv[])
 	if (argc < 3)
 	{
 		printf("Error\n");
-	
 		return (1);
 	}
 
