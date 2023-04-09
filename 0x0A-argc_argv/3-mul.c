@@ -6,14 +6,14 @@
  * @argc: count of command line arguments
  * @argv: array of arguments
  *
- * Return: 0
+ * Return: 1 if error or 0
 */
 
 int main(int argc, char *argv[])
 {
 	int j, k;
 
-	if (argc < 1)
+	if (argc < 3)
 	{
 		printf("Error\n");
 	
@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 	}
 
 	j = atoi(argv[1]);
+
 	k = atoi(argv[2]);
 
 	printf("%d\n", j * k);
