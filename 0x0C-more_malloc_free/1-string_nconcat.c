@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * string_nconcat - concatenates two strings
@@ -21,7 +22,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p++;
 
 	o = m + n + 1;
-
 	if (n >= p)
 		o = m + p + 1;
 
@@ -35,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		while (*s1)
 			k[m++] = *s1++;
-	n = 0;
+	p = 0;
 	if (s2)
 
 		while (s2[p] && p < n)
