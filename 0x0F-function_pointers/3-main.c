@@ -1,21 +1,25 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main - prints the result of some operations
  * @argc: count of arguments
  * @argv: argument vector
+ *
  * Return: 0
 */
 
+
 int main(int argc, char *argv[])
 {
+
 	int (*oprt)(int, int);
 
 	if (argc != 4)
 	{
-		printf("Errorr\n");
+		printf("Error\n");
 		exit(98);
 	}
 
