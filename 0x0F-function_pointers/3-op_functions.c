@@ -41,7 +41,7 @@ int op_sub(int a, int b)
  * @b: second number
  *
  * Return: a * b
-*/
+i*/
 
 int op_mul(int a, int b)
 {
