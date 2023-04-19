@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int (*ptr)(int, int);
+	int (*oprt)(int, int);
 
 	if (argc != 4)
 	{
@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	ptr = get_op_func(argv[2]);
+	oprt = get_op_func(argv[2]);
 
-	if (!ptr)
+	if (!oprt)
 	{
 
 		printf("Error\n");
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
 	}
 
-	printf("%d\n", ptr(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 
 		return (0);
 
