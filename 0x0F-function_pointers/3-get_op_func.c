@@ -4,10 +4,9 @@
 
 /**
  * get_op_func - selects the correct function to perform the operation
-i * @s: operator passed as argument to the program
+ * @s: operator passed as argument to the program
  *
- * Return: a pointer to the function that corresponds
- * to the operator given as a parameter
+ * Return: a pointer to the function
 */
 
 int (*get_op_func(char *s))(int, int)
@@ -30,7 +29,6 @@ int (*get_op_func(char *s))(int, int)
 	{
 
 		if (*(ops[i].op) == *s)
-
 			return (ops[i].f);
 
 		i++;

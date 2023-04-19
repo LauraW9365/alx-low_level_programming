@@ -1,14 +1,13 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * main - prints the result of some operations
- * @argc: count of arguments
+ * main - prints the result of operations
+ * @argc: number of elements
  * @argv: argument vector
  *
- * Return: 0
+ * Return: 0 Always
 */
 
 
@@ -18,14 +17,18 @@ int main(int argc, char *argv[])
 	int (*oprt)(int, int);
 
 	if (argc != 4)
+
 	{
+
 		printf("Error\n");
 		exit(98);
+
 	}
 
 	oprt = get_op_func(argv[2]);
 
 	if (!oprt)
+
 	{
 
 		printf("Error\n");
