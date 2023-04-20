@@ -5,7 +5,8 @@
 /**
  * print_strings - prints strings followed by a new line
  * @separator: string to be printed between the strings
- * @n: number of strings passed to the function
+ * @n: number of arguments
+ * @...: rest of the arguments
 */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -21,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (j < n)
 
 	{
-		ptr = va_arg(strings, char*);
+		ptr = va_arg(strings, char *);
 
 		if (ptr == NULL)
 			printf("nil");
