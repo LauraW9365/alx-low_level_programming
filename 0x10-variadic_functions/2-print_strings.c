@@ -25,18 +25,21 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		ptr = va_arg(strings, char *);
 
 		if (ptr == NULL)
+
 			printf("nil");
+
 		else
+
 			printf("%s", ptr);
 
 		if (separator != NULL && j < n - 1)
+
 			printf("%s", separator);
 
 		j++;
 	}
 
 	printf("\n");
-
 	va_end(strings);
 
 }
