@@ -10,13 +10,13 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+
 	char *ptr;
-
 	unsigned int j;
-
 	va_list strings;
 
 	va_start(strings, n);
+	j = 0;
 
 	while (j < n)
 	{
