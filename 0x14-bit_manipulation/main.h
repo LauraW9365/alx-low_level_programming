@@ -9,5 +9,6 @@ int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int _putchar(char c);
 unsigned long int _res(unsigned int b, unsigned int p);
+int get_endianness(void);
 
 #endif
