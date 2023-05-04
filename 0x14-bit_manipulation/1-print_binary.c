@@ -15,7 +15,7 @@ unsigned long int _res(unsigned int b, unsigned int p)
 
 	k = 1;
 
-	for (m = 1; m <= p; k++)
+	for (m = 1; m <= p; m++)
 		k *= b;
 
 	return (k);
