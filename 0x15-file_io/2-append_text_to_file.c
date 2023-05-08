@@ -10,7 +10,7 @@ size_t _str(char *s)
 {
 	size_t m;
 
-	for (; s[m]; m++)
+	for (m = 0; s[m]; m++)
 		;
 	return (m);
 }
@@ -25,7 +25,7 @@ size_t _str(char *s)
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int g;
-	ssize_t m;
+	ssize_t j;
 
 	if (filename == NULL)
 		return (-1);
@@ -39,9 +39,9 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	close(g);
 
-	if (m == -1)
+	if (j == -1)
 		return (-1);
 
-	return (-1);
+	return (1);
 
 }
